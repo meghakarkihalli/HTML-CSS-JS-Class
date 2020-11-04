@@ -1,0 +1,27 @@
+.blue {
+  text-align: center;
+  color: #000099;
+  background: #84d0f7;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.blue-button {
+  background: #91c9fd;
+  color: #040430;
+}
+
+.red {
+  text-align: center;
+  color: #cc3300;
+  background: #ff99cc;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.red-button {
+  background: #d4085a;
+  color: #240a02;
+}
