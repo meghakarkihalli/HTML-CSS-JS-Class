@@ -4,9 +4,6 @@ import DropdownNav from './Components/DropdownNav'
 
 
 class App extends React.Component {
-  openNav=()=> {
-    
-  }
   
   render() {
     return (
