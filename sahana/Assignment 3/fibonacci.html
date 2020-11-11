@@ -1,0 +1,58 @@
+<html>
+<head>
+    <style>
+        .body {
+            border: 2px solid black;
+            margin-left: 375px;
+            margin-top: 145px;
+            background-color: rgb(163, 163, 241);
+            height: 330px;
+            width: 500px;
+        }
+
+        .section {
+            padding: 65px 70px 50px 78px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        h1 {
+            padding-left: 140px;
+            padding-top: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="section">
+            <div class="output">
+                <h3 class="heading">Fibonacci Series</h3>
+                <label>Enter a number</label>
+                <input type="number" placeholder="enter a number here" id="num">
+                <button onClick="fibonacciGenerator()">submit</button>
+            </div>
+            <h1 id="s"></h1>
+            <script>
+                function fibonacciGenerator() {
+                    var limit = document.getElementById('num').value;
+                    var f1 = 0;
+                    var f2 = 1;
+                    var series = [];
+                    series.push(f1);
+                    series.push(f2);
+                    console.log(series);
+                    var i, f3;
+                    for (i = 2; i < limit; i++) {
+                        f3 = f1 + f2;
+                        series.push(f3);
+                        f1 = f2;
+                        f2 = f3;
+                    }
+                    console.log(series);
+                    document.getElementById("s").innerHTML = series;
+                }
+            </script>
+</body>
+</html>
