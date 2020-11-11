@@ -21,4 +21,4 @@ function longestStrings(arr) {
 }
 
 
-console.log(longestStrings(states));
+console.log(longestStrings(states)); //['california', 'nevadaaass']//
